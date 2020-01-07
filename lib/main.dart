@@ -55,6 +55,8 @@ class _ExampleState extends State<_Example> {
           enableControlFinishRefresh: false,
           enableControlFinishLoad: true,
           controller: _controller,
+          //header: ClassicalHeader(),
+          //footer: ClassicalFooter(),
           onRefresh: () async {
             await Future.delayed(Duration(seconds: 2), () {
               print('onRefresh');
